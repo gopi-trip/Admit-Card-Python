@@ -7,7 +7,7 @@ class Student():
     def __init__(self,name,enr,branch,course,subjects):
         self.name=name
         self.branch=branch
-        self.enrollmentNo=enr
+        self.registrationNo=enr
         self.course=course
         self.subjects = subjects
         
@@ -31,14 +31,14 @@ class Student():
         
         name = "Name: " + self.name
         branch = "Branch: " + self.branch
-        enrollment = "Enrollment No: " + self.enrollmentNo
+        registration = "registration No: " + self.registrationNo
         course = "Course: " + self.course
         
         drawing_context.text(((width - ((font1.size)*len(headerText))//2 - font1.size) ,10),text=headerText,font=font1,fill="black")
         drawing_context.text(((width - ((font1.size)*len(headerText))//2 - font1.size) ,30),text='------------------------------------------------',font=font1,fill=(0,0,0))
         drawing_context.text(((width - ((font1.size)*len(headerText))//2 + font1.size + 43.5),65),text=titleText,font=font1,fill=(0,0,0))
         drawing_context.text((14,150),text=name,font=font2,fill=(0,0,0))
-        drawing_context.text((14,200),text=enrollment,font=font2,fill=(0,0,0))
+        drawing_context.text((14,200),text=registration,font=font2,fill=(0,0,0))
         drawing_context.text((14,250),text=branch,font=font2,fill=(0,0,0))
         drawing_context.text((14,300),text=course,font=font2,fill=(0,0,0))
         
