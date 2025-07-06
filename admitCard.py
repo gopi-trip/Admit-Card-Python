@@ -1,4 +1,4 @@
-from PIL import Image,ImageDraw,ImageFont
+from PIL import Image,ImageDraw,ImageFont 
 import os
 
 class Student():
@@ -21,7 +21,7 @@ class Student():
         output = Image.new(mode='RGB',size=(width,height),color=(255,255,255))
         
         #Get a font
-        font2 = ImageFont.truetype('Roboto-VariableFont_wdth,wght.ttf',24)
+        font2 = ImageFont.truetype('Roboto-VariableFont_wdth,wght.ttf',24) #Download a font from somewhere like google fonts and put it in your root directory.
         font1 = ImageFont.truetype('Roboto-VariableFont_wdth,wght.ttf',34)
         
         #Creating a drawing context
@@ -61,7 +61,7 @@ class Student():
             drawing_context.text((code_x,code_y),text=value,font=font2,fill="black")
             code_y = code_y + 60
         
-        with Image.open('peter.jpeg') as img:
+        with Image.open('peter.jpeg') as img: #Upload your image file here.
             img = img.resize((150,200))
             output.paste(img,(width-200,135))
         
