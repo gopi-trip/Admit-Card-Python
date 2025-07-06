@@ -66,16 +66,6 @@ class Student():
             output.paste(img,(width-200,135))
         
         output.show()
-        
-        
-        
-        
-
-student1 = Student('Gopi','22103019','CS','BTech',{"English":"EN101","Math":"MA101","Science":"SC101","History":"HS101","Geography":"GE101"})
-# student2 = Student('Sunil Nayak','22103012','ME','BTech',{"Thermodynamics":"TH101","Mechanicla Mathematics":"ME141","Environmental Mechanics":"EM131","Fluid Mechanics":"FM291","Geology":"GE101"})
-# peter = Student('Peter Griffin','HE11023','Comedic Self-Sabotage','Bachelor of Arts (BA)',{'Pop Culture Studies':'PC101','Fermentation Sciences':'AFS220','Meme Theory':'MT140','Stunts & Physical Comedy':'STPC112'})
-
-student1.admitCard()
 
 # peter.admitCard()
 # print(student1)
