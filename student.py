@@ -6,13 +6,10 @@ def admitCard(name,branch,enrollment,course,subjectDict,subjectCodes,url,year,se
         width = 1375
         height=900
         output = Image.new(mode='RGB',size=(width,height),color=(255,255,255))
-        
-        #Get a font
         font2 = ImageFont.truetype('Roboto-VariableFont_wdth,wght.ttf',24)
         font1 = ImageFont.truetype('Roboto-VariableFont_wdth,wght.ttf',34)
+        drawing_context = ImageDraw.Draw(output)
         
-        #Creating a drawing context
-        drawing_context = ImageDraw.Draw(output);
         headerText = "ABC University of Technology"
         titleText = "ADMIT CARD"
         fileName = name
@@ -110,17 +107,17 @@ def admitCard(name,branch,enrollment,course,subjectDict,subjectCodes,url,year,se
         sig_y = height-110
         drawing_context.text((sig_x,sig_y),text="Signature",font=font2,fill="black")
         
-        with Image.open(f"images/{fileName}.png") as img:  #Enter your image path
+        with Image.open(f"images/{fileName}.png") as img: 
             img = img.resize((170,200))
             output.paste(img,(width-400,130))
-        with Image.open(f"sig.jpg") as img:  #Enter your image path
+        with Image.open(f"sig.jpg") as img:  
             img = img.resize((100,30))
             output.paste(img,(sig_x,sig_y-40))
         
-        output.save(f"images/Admit Card/output.{fileName}.pdf") #Enter path where you wish to save the files
+        output.save(f"images/Admit Card/output.{fileName}.pdf")
         
         
-with open('student_records_extended.csv','r') as f:
+with open('synthetic_student_records_100.csv','r') as f:
     reader = csv.DictReader(f)
     for line in reader:
         subjectList = line['Subjects'].split(",")
