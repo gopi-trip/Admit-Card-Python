@@ -6,17 +6,7 @@ Generates professional, print-ready exam admit cards as PNG images from a CSV of
 
 ## Screenshots
 
-> Replace the paths below with your own generated cards, or run the Quick Demo first and they'll appear in `images/output/`.
-
-**5-subject card (CS branch)**
-
-![Admit card for Arjun Sharma showing 5 subjects with dates and QR code](images/output/AdmitCard_Arjun%20Sharma_CS2024001.png)
-
-**4-subject card (EC branch)**
-
-![Admit card for Priya Patel showing 4 subjects with dates and QR code](images/output/AdmitCard_Priya%20Patel_EC2024042.png)
-
-Cards scale in height automatically — the only difference between the two above is the number of subject rows.
+<img width="1200" height="735" alt="sample_admit_card" src="https://github.com/user-attachments/assets/cdb812d2-34b5-4b1d-aa40-f69b67b801d8" />
 
 ---
 
