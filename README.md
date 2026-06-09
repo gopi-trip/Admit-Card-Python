@@ -139,7 +139,7 @@ The QR code encodes `ADMIT|<enrollment>|<name>|<semester>` and can be scanned to
 
 **Real output example:**
 
-![Sample generated admit card](images/output/AdmitCard_Arjun%20Sharma_CS2024001.png)
+<img width="1200" height="735" alt="sample_admit_card" src="https://github.com/user-attachments/assets/0810f059-48b1-4bcd-a43f-c3a230df6ec7" />
 
 ---
 
