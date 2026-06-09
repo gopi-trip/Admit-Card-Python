@@ -4,6 +4,22 @@ Generates professional, print-ready exam admit cards as PNG images from a CSV of
 
 ---
 
+## Screenshots
+
+> Replace the paths below with your own generated cards, or run the Quick Demo first and they'll appear in `images/output/`.
+
+**5-subject card (CS branch)**
+
+![Admit card for Arjun Sharma showing 5 subjects with dates and QR code](images/output/AdmitCard_Arjun%20Sharma_CS2024001.png)
+
+**4-subject card (EC branch)**
+
+![Admit card for Priya Patel showing 4 subjects with dates and QR code](images/output/AdmitCard_Priya%20Patel_EC2024042.png)
+
+Cards scale in height automatically — the only difference between the two above is the number of subject rows.
+
+---
+
 ## Quick Demo (2 minutes)
 
 **1. Install dependencies**
@@ -130,6 +146,10 @@ The image dimensions scale dynamically — taller cards are produced for student
 ```
 
 The QR code encodes `ADMIT|<enrollment>|<name>|<semester>` and can be scanned to verify authenticity. A unique card ID (truncated SHA-256 hash of enrollment + name) is printed beneath it.
+
+**Real output example:**
+
+![Sample generated admit card](images/output/AdmitCard_Arjun%20Sharma_CS2024001.png)
 
 ---
 
